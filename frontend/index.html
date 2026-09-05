@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        RecoverAI — Revenue Recovery Agent
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css?v=3"
+    >
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <!-- =====================================================
+         SIDEBAR
+         ===================================================== -->
+
+    <aside class="sidebar">
+
+
+        <div class="brand">
+
+            <div class="brand-mark">
+                R
+            </div>
+
+            <div>
+
+                <h1>
+                    RecoverAI
+                </h1>
+
+                <span>
+                    Revenue Recovery Agent
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <nav class="nav">
+
+
+            <a
+                class="nav-item active"
+                id="nav-overview"
+            >
+
+                <span class="nav-icon">
+                    ◈
+                </span>
+
+                <span>
+                    Overview
+                </span>
+
+            </a>
+
+
+            <a
+                class="nav-item"
+                id="nav-recovery"
+            >
+
+                <span class="nav-icon">
+                    ↻
+                </span>
+
+                <span>
+                    Recovery
+                </span>
+
+            </a>
+
+
+            <a
+                class="nav-item"
+                id="nav-guardrails"
+            >
+
+                <span class="nav-icon">
+                    ⚙
+                </span>
+
+                <span>
+                    Guardrails
+                </span>
+
+            </a>
+
+
+            <a
+                class="nav-item"
+                id="nav-audit"
+            >
+
+                <span class="nav-icon">
+                    ◷
+                </span>
+
+                <span>
+                    Audit Log
+                </span>
+
+            </a>
+
+
+        </nav>
+
+
+        <div class="sidebar-status">
+
+            <div class="status-dot"></div>
+
+            <div>
+
+                <strong>
+                    System Operational
+                </strong>
+
+                <span>
+                    AI agent is active
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main class="main">
+
+
+
+        <!-- =================================================
+             OVERVIEW VIEW
+             ================================================= -->
+
+        <div id="overview-view">
+
+
+            <header class="topbar">
+
+                <div>
+
+                    <p class="eyebrow">
+                        AI REVENUE RECOVERY
+                    </p>
+
+                    <h2>
+                        Recovery Control Center
+                    </h2>
+
+                    <p class="subtitle">
+                        Detect revenue at risk. Recover intelligently.
+                    </p>
+
+                </div>
+
+
+                <div class="live-status">
+
+                    <span class="live-dot"></span>
+
+                    <span>
+                        LIVE
+                    </span>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- ================= METRICS ================= -->
+
+            <section class="metrics-grid">
+
+
+                <div class="metric-card">
+
+                    <div class="metric-label">
+                        Revenue at Risk
+                    </div>
+
+                    <div
+                        class="metric-value"
+                        id="revenue-at-risk"
+                    >
+                        ₹0
+                    </div>
+
+                    <div class="metric-description">
+                        From failed payments
+                    </div>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-label">
+                        Expected Recovery
+                    </div>
+
+                    <div
+                        class="metric-value"
+                        id="expected-recovery"
+                    >
+                        ₹0
+                    </div>
+
+                    <div class="metric-description">
+                        AI-estimated recoverable revenue
+                    </div>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-label">
+                        Recovered Revenue
+                    </div>
+
+                    <div
+                        class="metric-value"
+                        id="recovered-revenue"
+                    >
+                        ₹0
+                    </div>
+
+                    <div class="metric-description">
+                        Revenue recovered successfully
+                    </div>
+
+                </div>
+
+
+                <div class="metric-card">
+
+                    <div class="metric-label">
+                        Failed Payments
+                    </div>
+
+                    <div
+                        class="metric-value"
+                        id="failed-payments"
+                    >
+                        0
+                    </div>
+
+                    <div class="metric-description">
+                        Payment attempts requiring recovery
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ================= PIPELINE ================= -->
+
+            <section class="panel pipeline-panel">
+
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p class="section-label">
+                            AGENT PIPELINE
+                        </p>
+
+                        <h3>
+                            Autonomous Recovery Workflow
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="pipeline">
+
+
+                    <div class="pipeline-step">
+
+                        <div class="step-number">
+                            01
+                        </div>
+
+                        <strong>
+                            Detect
+                        </strong>
+
+                        <span>
+                            Failed payment
+                        </span>
+
+                    </div>
+
+
+                    <div class="pipeline-arrow">
+                        →
+                    </div>
+
+
+                    <div class="pipeline-step">
+
+                        <div class="step-number">
+                            02
+                        </div>
+
+                        <strong>
+                            Diagnose
+                        </strong>
+
+                        <span>
+                            Failure reason
+                        </span>
+
+                    </div>
+
+
+                    <div class="pipeline-arrow">
+                        →
+                    </div>
+
+
+                    <div class="pipeline-step">
+
+                        <div class="step-number">
+                            03
+                        </div>
+
+                        <strong>
+                            Predict
+                        </strong>
+
+                        <span>
+                            Recovery probability
+                        </span>
+
+                    </div>
+
+
+                    <div class="pipeline-arrow">
+                        →
+                    </div>
+
+
+                    <div class="pipeline-step">
+
+                        <div class="step-number">
+                            04
+                        </div>
+
+                        <strong>
+                            Decide
+                        </strong>
+
+                        <span>
+                            Best recovery action
+                        </span>
+
+                    </div>
+
+
+                    <div class="pipeline-arrow">
+                        →
+                    </div>
+
+
+                    <div class="pipeline-step">
+
+                        <div class="step-number">
+                            05
+                        </div>
+
+                        <strong>
+                            Guardrail
+                        </strong>
+
+                        <span>
+                            Policy validation
+                        </span>
+
+                    </div>
+
+
+                    <div class="pipeline-arrow">
+                        →
+                    </div>
+
+
+                    <div class="pipeline-step">
+
+                        <div class="step-number">
+                            06
+                        </div>
+
+                        <strong>
+                            Execute
+                        </strong>
+
+                        <span>
+                            Recovery action
+                        </span>
+
+                    </div>
+
+
+                    <div class="pipeline-arrow">
+                        →
+                    </div>
+
+
+                    <div class="pipeline-step">
+
+                        <div class="step-number">
+                            07
+                        </div>
+
+                        <strong>
+                            Audit
+                        </strong>
+
+                        <span>
+                            Record decision
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= SUMMARY ================= -->
+
+            <section class="summary-grid">
+
+
+                <div class="summary-card approved">
+
+                    <div class="summary-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>
+                            AUTOMATED RECOVERIES APPROVED
+                        </span>
+
+                        <strong id="approved-count">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="summary-card blocked">
+
+                    <div class="summary-icon">
+                        !
+                    </div>
+
+                    <div>
+
+                        <span>
+                            RECOVERIES BLOCKED
+                        </span>
+
+                        <strong id="blocked-count">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ================= OVERVIEW QUEUE ================= -->
+
+            <section class="panel">
+
+
+                <div class="panel-header">
+
+                    <div>
+
+                        <p class="section-label">
+                            RECOVERY QUEUE
+                        </p>
+
+                        <h3>
+                            Top Recovery Opportunities
+                        </h3>
+
+                    </div>
+
+
+                    <div class="panel-badge">
+                        AI RANKED
+                    </div>
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Payment
+                                </th>
+
+                                <th>
+                                    Amount
+                                </th>
+
+                                <th>
+                                    Failure
+                                </th>
+
+                                <th>
+                                    AI Probability
+                                </th>
+
+                                <th>
+                                    Recommended Action
+                                </th>
+
+                                <th>
+                                    Expected Recovery
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="opportunities-table">
+
+                            <tr>
+
+                                <td
+                                    colspan="7"
+                                    class="loading"
+                                >
+                                    Loading recovery opportunities...
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             RECOVERY OPERATIONS VIEW
+             ================================================= -->
+
+        <section
+            id="recovery-view"
+            class="recovery-view hidden"
+        >
+
+
+            <!-- ================= HEADER ================= -->
+
+            <div class="recovery-header">
+
+
+                <div>
+
+                    <p class="section-label">
+                        RECOVERY OPERATIONS
+                    </p>
+
+                    <h3>
+                        Revenue Recovery Queue
+                    </h3>
+
+                    <p class="recovery-subtitle">
+                        AI-ranked recovery opportunities with
+                        policy-controlled execution.
+                    </p>
+
+                </div>
+
+
+                <div class="recovery-live-status">
+
+                    <span class="live-dot"></span>
+
+                    <span>
+                        AGENT ACTIVE
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= RECOVERY METRICS ================= -->
+
+            <div class="recovery-metrics">
+
+
+                <div class="recovery-metric-card">
+
+                    <span>
+                        REVENUE AT RISK
+                    </span>
+
+                    <strong id="recovery-risk-value">
+                        ₹0
+                    </strong>
+
+                    <p>
+                        Failed payment value
+                    </p>
+
+                </div>
+
+
+                <div class="recovery-metric-card">
+
+                    <span>
+                        EXPECTED RECOVERY
+                    </span>
+
+                    <strong id="recovery-expected-value">
+                        ₹0
+                    </strong>
+
+                    <p>
+                        AI-estimated recovery value
+                    </p>
+
+                </div>
+
+
+                <div class="recovery-metric-card">
+
+                    <span>
+                        RECOVERED REVENUE
+                    </span>
+
+                    <strong id="recovery-recovered-value">
+                        ₹0
+                    </strong>
+
+                    <p>
+                        Successful simulated recoveries
+                    </p>
+
+                </div>
+
+
+                <div class="recovery-metric-card">
+
+                    <span>
+                        RECOVERY RATE
+                    </span>
+
+                    <strong id="recovery-rate-value">
+                        0%
+                    </strong>
+
+                    <p>
+                        Recovered / revenue at risk
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= ACTION DISTRIBUTION ================= -->
+
+            <div class="recovery-content-grid">
+
+
+                <div class="recovery-panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <p class="section-label">
+                                AI ACTION MIX
+                            </p>
+
+                            <h3>
+                                Recommended Recovery Actions
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="action-distribution"
+                        id="action-distribution"
+                    >
+
+                        <div class="action-row">
+
+                            <div class="action-row-info">
+
+                                <strong>
+                                    Retry Payment
+                                </strong>
+
+                                <span>
+                                    0 opportunities
+                                </span>
+
+                            </div>
+
+                            <div class="action-bar">
+
+                                <div
+                                    class="action-bar-fill"
+                                    style="width: 0%"
+                                ></div>
+
+                            </div>
+
+                            <strong class="action-count">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="action-row">
+
+                            <div class="action-row-info">
+
+                                <strong>
+                                    Send Payment Link
+                                </strong>
+
+                                <span>
+                                    0 opportunities
+                                </span>
+
+                            </div>
+
+                            <div class="action-bar">
+
+                                <div
+                                    class="action-bar-fill"
+                                    style="width: 0%"
+                                ></div>
+
+                            </div>
+
+                            <strong class="action-count">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="action-row">
+
+                            <div class="action-row-info">
+
+                                <strong>
+                                    Update Payment Method
+                                </strong>
+
+                                <span>
+                                    0 opportunities
+                                </span>
+
+                            </div>
+
+                            <div class="action-bar">
+
+                                <div
+                                    class="action-bar-fill"
+                                    style="width: 0%"
+                                ></div>
+
+                            </div>
+
+                            <strong class="action-count">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="action-row">
+
+                            <div class="action-row-info">
+
+                                <strong>
+                                    Manual Review
+                                </strong>
+
+                                <span>
+                                    0 opportunities
+                                </span>
+
+                            </div>
+
+                            <div class="action-bar">
+
+                                <div
+                                    class="action-bar-fill"
+                                    style="width: 0%"
+                                ></div>
+
+                            </div>
+
+                            <strong class="action-count">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EXECUTION SUMMARY -->
+
+                <div class="recovery-panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <p class="section-label">
+                                EXECUTION SUMMARY
+                            </p>
+
+                            <h3>
+                                Agent Outcomes
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="execution-summary">
+
+
+                        <div class="execution-summary-row">
+
+                            <div>
+
+                                <span class="execution-dot approved-dot"></span>
+
+                                <span>
+                                    Approved
+                                </span>
+
+                            </div>
+
+                            <strong id="recovery-approved">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="execution-summary-row">
+
+                            <div>
+
+                                <span class="execution-dot blocked-dot"></span>
+
+                                <span>
+                                    Blocked
+                                </span>
+
+                            </div>
+
+                            <strong id="recovery-blocked">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="execution-summary-row">
+
+                            <div>
+
+                                <span class="execution-dot recovered-dot"></span>
+
+                                <span>
+                                    Recovered
+                                </span>
+
+                            </div>
+
+                            <strong id="recovery-successful">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="execution-summary-row">
+
+                            <div>
+
+                                <span class="execution-dot failed-dot"></span>
+
+                                <span>
+                                    Failed
+                                </span>
+
+                            </div>
+
+                            <strong id="recovery-failed">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= FULL RECOVERY QUEUE ================= -->
+
+            <div class="recovery-panel recovery-queue-panel">
+
+
+                <div class="panel-header">
+
+
+                    <div>
+
+                        <p class="section-label">
+                            AI RANKED QUEUE
+                        </p>
+
+                        <h3>
+                            Recovery Opportunities
+                        </h3>
+
+                        <p class="recovery-table-subtitle">
+                            Click a payment to inspect the complete
+                            AI decision, guardrail evaluation and
+                            execution result.
+                        </p>
+
+                    </div>
+
+
+                    <div class="panel-badge">
+                        AUTONOMOUS
+                    </div>
+
+
+                </div>
+
+
+                <div class="table-container">
+
+                    <table class="recovery-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Payment
+                                </th>
+
+                                <th>
+                                    Amount
+                                </th>
+
+                                <th>
+                                    Failure Reason
+                                </th>
+
+                                <th>
+                                    Recovery Probability
+                                </th>
+
+                                <th>
+                                    AI Action
+                                </th>
+
+                                <th>
+                                    Expected Recovery
+                                </th>
+
+                                <th>
+                                    Guardrail
+                                </th>
+
+                                <th>
+                                    Execution
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="recovery-table-body">
+
+                            <tr>
+
+                                <td
+                                    colspan="8"
+                                    class="loading"
+                                >
+                                    Loading recovery operations...
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             AUDIT LOG VIEW
+             ================================================= -->
+
+        <section
+            id="audit-view"
+            class="audit-view hidden"
+        >
+
+
+            <div class="audit-header">
+
+
+                <div>
+
+                    <p class="section-label">
+                        AUDIT LOG
+                    </p>
+
+                    <h3>
+                        Recovery Decision History
+                    </h3>
+
+                    <p class="audit-subtitle">
+                        Complete trace of AI decisions,
+                        guardrails and execution outcomes.
+                    </p>
+
+                </div>
+
+
+                <div class="audit-count">
+
+                    <span>
+                        RECORDS
+                    </span>
+
+                    <strong id="audit-count">
+                        0
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="audit-panel">
+
+
+                <div class="audit-table-container">
+
+                    <table class="audit-table">
+
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Time
+                                </th>
+
+                                <th>
+                                    Payment
+                                </th>
+
+                                <th>
+                                    AI Decision
+                                </th>
+
+                                <th>
+                                    Guardrail
+                                </th>
+
+                                <th>
+                                    Execution
+                                </th>
+
+                                <th>
+                                    Recovered
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="audit-table-body">
+
+                            <tr>
+
+                                <td
+                                    colspan="6"
+                                    class="loading"
+                                >
+                                    Loading audit records...
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             GUARDRAILS VIEW
+             ================================================= -->
+
+        <section
+            id="guardrails-view"
+            class="guardrails-view hidden"
+        >
+
+
+            <div class="guardrails-header">
+
+
+                <div>
+
+                    <p class="section-label">
+                        AI SAFETY CONTROLS
+                    </p>
+
+                    <h3>
+                        Recovery Guardrails
+                    </h3>
+
+                    <p class="guardrails-subtitle">
+                        Policy controls that prevent unsafe
+                        or low-confidence recovery actions.
+                    </p>
+
+                </div>
+
+
+                <div class="guardrail-status">
+
+                    <span class="status-dot"></span>
+
+                    <span>
+                        POLICY ENGINE ACTIVE
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= GUARDRAIL METRICS ================= -->
+
+            <div class="guardrail-metrics">
+
+
+                <div class="guardrail-card">
+
+                    <span class="guardrail-label">
+                        MAX RETRIES
+                    </span>
+
+                    <strong>
+                        2
+                    </strong>
+
+                    <p>
+                        Prevents repeated payment attempts.
+                    </p>
+
+                </div>
+
+
+                <div class="guardrail-card">
+
+                    <span class="guardrail-label">
+                        MIN RECOVERY SCORE
+                    </span>
+
+                    <strong>
+                        45
+                    </strong>
+
+                    <p>
+                        Low-confidence cases require manual review.
+                    </p>
+
+                </div>
+
+
+                <div class="guardrail-card">
+
+                    <span class="guardrail-label">
+                        HIGH-VALUE THRESHOLD
+                    </span>
+
+                    <strong>
+                        ₹5,000
+                    </strong>
+
+                    <p>
+                        High-value payments require human approval.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= GUARDRAIL LAYOUT ================= -->
+
+            <div class="guardrail-layout">
+
+
+                <div class="guardrail-panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <p class="section-label">
+                                BLOCK CONDITIONS
+                            </p>
+
+                            <h3>
+                                When Recovery Is Blocked
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="guardrail-rules">
+
+
+                        <div class="guardrail-rule">
+
+                            <div class="rule-icon">
+                                01
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Maximum retry limit reached
+                                </strong>
+
+                                <p>
+                                    Recovery is blocked when a
+                                    payment has already reached
+                                    the allowed retry limit.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="guardrail-rule">
+
+                            <div class="rule-icon">
+                                02
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Low recovery probability
+                                </strong>
+
+                                <p>
+                                    Payments with a recovery score
+                                    below 45 are routed away from
+                                    automated recovery.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="guardrail-rule">
+
+                            <div class="rule-icon">
+                                03
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    High-value transaction
+                                </strong>
+
+                                <p>
+                                    Transactions of ₹5,000 or more
+                                    require additional human
+                                    oversight.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="guardrail-panel">
+
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <p class="section-label">
+                                CURRENT ENFORCEMENT
+                            </p>
+
+                            <h3>
+                                Policy Outcomes
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="policy-outcomes">
+
+
+                        <div class="policy-outcome approved">
+
+                            <div>
+
+                                <span>
+                                    APPROVED
+                                </span>
+
+                                <p>
+                                    Recovery actions passed
+                                    all guardrails.
+                                </p>
+
+                            </div>
+
+                            <strong id="guardrail-approved">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                        <div class="policy-outcome blocked">
+
+                            <div>
+
+                                <span>
+                                    BLOCKED
+                                </span>
+
+                                <p>
+                                    Recovery actions stopped
+                                    by policy.
+                                </p>
+
+                            </div>
+
+                            <strong id="guardrail-blocked">
+                                0
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= DESIGN PRINCIPLE ================= -->
+
+            <div class="guardrail-principle">
+
+
+                <div class="principle-icon">
+                    ✓
+                </div>
+
+
+                <div>
+
+                    <p class="section-label">
+                        DESIGN PRINCIPLE
+                    </p>
+
+                    <h3>
+                        AI decides. Policy controls. Humans oversee.
+                    </h3>
+
+                    <p>
+                        RecoverAI separates AI decision-making
+                        from execution controls. Every recovery
+                        action must pass deterministic guardrails
+                        before it can be executed.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             PAYMENT DECISION MODAL
+             ================================================= -->
+
+        <div
+            id="payment-modal"
+            class="modal hidden"
+        >
+
+
+            <div
+                class="modal-overlay"
+                onclick="closePaymentDetails()"
+            ></div>
+
+
+            <div class="modal-content">
+
+
+                <div class="modal-header">
+
+
+                    <div>
+
+                        <p class="section-label">
+                            AI RECOVERY DECISION
+                        </p>
+
+                        <h3 id="modal-payment-id">
+                            Payment
+                        </h3>
+
+                    </div>
+
+
+                    <button
+                        class="modal-close"
+                        onclick="closePaymentDetails()"
+                    >
+                        ×
+                    </button>
+
+
+                </div>
+
+
+
+                <div
+                    id="modal-loading"
+                    class="modal-loading"
+                >
+                    Loading payment decision...
+                </div>
+
+
+
+                <div
+                    id="payment-details"
+                    class="hidden"
+                >
+
+
+                    <!-- BASIC DETAILS -->
+
+                    <div class="detail-grid">
+
+
+                        <div class="detail-card">
+
+                            <span>
+                                Customer
+                            </span>
+
+                            <strong id="detail-customer">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-card">
+
+                            <span>
+                                Amount
+                            </span>
+
+                            <strong id="detail-amount">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-card">
+
+                            <span>
+                                Failure Reason
+                            </span>
+
+                            <strong id="detail-failure">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-card">
+
+                            <span>
+                                AI Recovery Probability
+                            </span>
+
+                            <strong id="detail-probability">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- AGENT DECISION -->
+
+                    <div class="decision-section">
+
+
+                        <p class="section-label">
+                            AGENT DECISION
+                        </p>
+
+
+                        <div class="decision-grid">
+
+
+                            <div>
+
+                                <span>
+                                    Selected Action
+                                </span>
+
+                                <strong id="detail-action">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Action Success Probability
+                                </span>
+
+                                <strong id="detail-action-probability">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Expected Recovery
+                                </span>
+
+                                <strong id="detail-expected">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="agent-reason">
+
+                            <span>
+                                Agent Reasoning
+                            </span>
+
+                            <p id="detail-reason">
+                                —
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- GUARDRAIL -->
+
+                    <div class="decision-section">
+
+
+                        <p class="section-label">
+                            GUARDRAIL DECISION
+                        </p>
+
+
+                        <div class="guardrail-box">
+
+
+                            <div>
+
+                                <span>
+                                    Policy Result
+                                </span>
+
+                                <strong
+                                    id="detail-guardrail"
+                                    class="decision-status"
+                                >
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Policy Reason
+                                </span>
+
+                                <p id="detail-policy">
+                                    —
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- EXECUTION -->
+
+                    <div class="decision-section">
+
+
+                        <p class="section-label">
+                            EXECUTION RESULT
+                        </p>
+
+
+                        <div class="execution-result">
+
+
+                            <div>
+
+                                <span>
+                                    Status
+                                </span>
+
+                                <strong id="detail-status">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Recovered Amount
+                                </span>
+
+                                <strong id="detail-recovered">
+                                    —
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="execution-message">
+
+                            <span>
+                                Execution Message
+                            </span>
+
+                            <p id="detail-message">
+                                —
+                            </p>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             FOOTER
+             ================================================= -->
+
+        <footer>
+
+            <span>
+                RecoverAI
+            </span>
+
+            <span>
+                AI Revenue Recovery • Simulated Recovery Environment
+            </span>
+
+        </footer>
+
+
+    </main>
+
+
+</div>
+
+
+
+<script src="app.js"></script>
+
+
+</body>
+
+</html>
