@@ -17,6 +17,36 @@ function formatCurrency(value) {
 function formatPercentage(value) {
     return (Number(value || 0) * 100).toFixed(0) + "%";
 }
+function formatAction(action) {
+    const labels = {
+        retry_payment: "Retry Payment",
+        send_payment_link: "Send Payment Link",
+        request_payment_method_update: "Update Payment Method",
+        manual_review: "Manual Review"
+    };
+
+    return labels[action] || action || "—";
+}
+
+
+function formatFailureReason(reason) {
+    const labels = {
+        network_error: "Network Error",
+        timeout: "Payment Timeout",
+        insufficient_funds: "Insufficient Funds",
+        bank_declined: "Bank Declined",
+        expired_card: "Expired Card"
+    };
+
+    return labels[reason] || reason || "—";
+}
+
+
+function formatExecutionStatus(status) {
+    return String(status || "—")
+        .replace(/_/g, " ")
+        .toUpperCase();
+}
 
 
 function setActiveNav(activeId) {
@@ -354,7 +384,7 @@ async function loadOpportunities() {
                 </td>
 
                 <td>
-                    ${payment.failure_reason || "—"}
+                    ${formatFailureReason(payment.failure_reason)}
                 </td>
 
                 <td>
@@ -362,7 +392,7 @@ async function loadOpportunities() {
                 </td>
 
                 <td>
-                    ${payment.recommended_action || "—"}
+                    ${formatAction(payment.recommended_action)}
                 </td>
 
                 <td>
@@ -700,7 +730,7 @@ async function loadRecoveryOperations() {
 
 
                 <td>
-                    ${payment.failure_reason || "—"}
+                    ${formatFailureReason(payment.failure_reason)}
                 </td>
 
 
@@ -712,7 +742,7 @@ async function loadRecoveryOperations() {
                 <td>
 
                     <span class="recovery-action-label">
-                        ${payment.recommended_action || "—"}
+                       ${formatAction(payment.recommended_action)}
                     </span>
 
                 </td>
@@ -1092,7 +1122,7 @@ async function openPaymentDetails(paymentId) {
 
         if (failure) {
             failure.textContent =
-                data.failure_reason;
+    formatFailureReason(data.failure_reason);
         }
 
         if (probability) {
@@ -1128,7 +1158,7 @@ async function openPaymentDetails(paymentId) {
 
         if (action) {
             action.textContent =
-                data.recommended_action;
+    formatAction(data.recommended_action);
         }
 
         if (actionProbability) {
@@ -1402,9 +1432,9 @@ async function loadAuditLog() {
 
 
             const execution =
-                String(
-                    record.execution_status || ""
-                ).toLowerCase();
+                formatExecutionStatus(
+    record.execution_status
+)
 
 
             let executionClass =
@@ -1448,7 +1478,7 @@ async function loadAuditLog() {
                 <td>
 
                     <span class="audit-action">
-                        ${record.recommended_action || "—"}
+                        ${formatAction(record.recommended_action)}
                     </span>
 
                 </td>
